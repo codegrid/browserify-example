@@ -1,0 +1,10 @@
+{
+  "name": "3-2-transform",
+  "private": true,
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "coffeeify": "^1.0.0",
+    "gulp": "^3.8.11",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

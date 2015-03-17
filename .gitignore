@@ -2,3 +2,4 @@ bundle.js
 node_modules/
 2-5-lib/mylib.js
 bower_components/
+dist/
