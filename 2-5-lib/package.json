@@ -1,0 +1,7 @@
+{
+  "name": "2-5-lib",
+  "private": true,
+  "devDependencies": {
+    "browserify": "^9.0.3"
+  }
+}
