@@ -5,4 +5,4 @@ function sayHello() {
   console.log('Hello! ' + foo());
 }
 
-module.exports = sayHello;
+module.exports.sayHello = sayHello;
