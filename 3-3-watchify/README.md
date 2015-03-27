@@ -4,5 +4,5 @@ gulpでwatchifyを使って更新されたファイルだけ変換すること�
 
 ```
 $ npm install
-$ ./node_modules/.bin/gulp scripts
+$ ./node_modules/.bin/gulp build:scripts
 ```

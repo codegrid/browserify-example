@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 var gwatchify = require('gulp-watchify');
 
-gulp.task('scripts', gwatchify(function(watchify) {
+gulp.task('build:scripts', gwatchify(function(watchify) {
   return gulp.src('./src/main.coffee')
     .pipe(watchify({
       watch: true,

@@ -9,7 +9,7 @@ var opts = _.extend({ extensions: '.coffee' }, watchify.args);
 var bundler = watchify(browserify('./src/main.coffee', opts));
 bundler.transform('coffeeify');
 
-gulp.task('scripts', bundle);
+gulp.task('build:scripts', bundle);
 bundler.on('update', bundle);
 bundler.on('log', gutil.log);
 

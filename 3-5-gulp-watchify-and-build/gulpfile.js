@@ -6,7 +6,7 @@ var sass = require('gulp-sass');
 var watching = false;
 gulp.task('enable-watch', function() { watching = true; });
 
-gulp.task('scripts', gwatchify(function(watchify) {
+gulp.task('build:scripts', gwatchify(function(watchify) {
   return gulp.src('./src/main.coffee')
     .pipe(watchify({
       watch: watching,
@@ -19,14 +19,14 @@ gulp.task('scripts', gwatchify(function(watchify) {
     .pipe(gulp.dest('./dist'));
 }));
 
-gulp.task('styles', function () {
+gulp.task('build:styles', function () {
   return gulp.src('./src/*.scss')
     .pipe(sass())
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('build', ['scripts', 'styles']);
+gulp.task('build', ['build:scripts', 'build:styles']);
 
-gulp.task('watch', ['enable-watch', 'scripts'], function() {
-  gulp.watch('./src/*.scss', ['styles']);
+gulp.task('watch', ['enable-watch', 'build:scripts'], function() {
+  gulp.watch('./src/*.scss', ['build:styles']);
 });

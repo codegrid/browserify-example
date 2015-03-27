@@ -4,5 +4,5 @@ gulpでBrowserifyを使う最も単純な例
 
 ```
 $ npm install
-$ ./node_modules/.bin/gulp scripts
+$ ./node_modules/.bin/gulp build:scripts
 ```

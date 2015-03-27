@@ -4,5 +4,5 @@ gulpでcoffeeifyを使う
 
 ```
 $ npm install
-$ ./node_modules/.bin/gulp scripts
+$ ./node_modules/.bin/gulp build:scripts
 ```

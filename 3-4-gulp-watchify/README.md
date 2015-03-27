@@ -4,5 +4,5 @@ gulp-watchifyを使ってBrowserifyの変換処理をwatchする。
 
 ```
 $ npm install
-$ ./node_modules/.bin/gulp scripts
+$ ./node_modules/.bin/gulp build:scripts
 ```
